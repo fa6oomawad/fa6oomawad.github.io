@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "consola";
+  src: url(dist\consola.ttf); }
+
+body {
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100%; }
+  .container .centerBox {
+    position: absolute;
+    top: 37%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 700px; }
+    .container .centerBox h1 {
+      color: #e9f624;
+      font-size: 80px;
+      margin-bottom: 0;
+      margin-left: 50px;
+      font-family: courier !important; }
+    .container .centerBox h2 {
+      font-size: 38px;
+      padding-left: 69px;
+      margin-top: 9px;
+      margin-bottom: 9px;
+      font-family: courier !important; }
+    .container .centerBox h5 {
+      font-size: 17px;
+      margin-top: 10px;
+      font-family: courier !important;
+      color: white;
+      padding-left: 82px; }
+  .container .multiLines {
+    position: absolute;
+    right: 1%; }
+    .container .multiLines .line {
+      width: 31px;
+      height: 1px;
+      background: white; }
+
+.bluee {
+  color: #288aba; }
+
+.orange {
+  color: #ce8349; }
