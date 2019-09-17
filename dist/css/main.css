@@ -37,14 +37,96 @@ body {
       padding-left: 82px; }
   .container .multiLines {
     position: absolute;
-    right: 1%; }
+    right: 2%;
+    top: 4%;
+    z-index: 1; }
     .container .multiLines .line {
       width: 31px;
-      height: 1px;
-      background: white; }
+      height: 2px;
+      margin-bottom: 5px;
+      background: white;
+      transition: 0.7s all; }
+    .container .multiLines.cross .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px); }
+    .container .multiLines.cross .line:nth-child(2) {
+      opacity: 0; }
+    .container .multiLines.cross .line:nth-child(3) {
+      transform: rotate(-45deg) translate(3px, -6px); }
+  .container .side-menu {
+    position: absolute;
+    height: 100vh;
+    width: 34%;
+    right: 0%;
+    background: #323232;
+    transition: 0.7s all; }
+    .container .side-menu .menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .container .side-menu .menu .menu-item {
+        font-size: 30px;
+        font-family: courier;
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.8s; }
+        .container .side-menu .menu .menu-item .menu-link {
+          text-decoration: none;
+          color: white; }
+          .container .side-menu .menu .menu-item .menu-link:hover {
+            color: #e9f624;
+            font-size: 33px; }
+      .container .side-menu .menu .active {
+        font-weight: 600;
+        color: #e9f624; }
 
 .bluee {
   color: #288aba; }
 
 .orange {
   color: #ce8349; }
+
+.show {
+  top: 0; }
+
+.hide {
+  top: -100%; }
+
+.wrapAbout {
+  width: 800px;
+  height: 500px; }
+
+.aboutBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-52%, -33%);
+  width: 800px;
+  height: 500px; }
+  .aboutBox .smallBox {
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+    .aboutBox .smallBox p {
+      font-family: courier;
+      color: white; }
+    .aboutBox .smallBox .imgContainer {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #e9f624; }
+      .aboutBox .smallBox .imgContainer img {
+        width: 100%;
+        height: 100%; }
+  .aboutBox .textBox {
+    width: 50%; }

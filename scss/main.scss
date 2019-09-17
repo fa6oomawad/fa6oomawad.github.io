@@ -7,6 +7,7 @@ $primary-color: #1e1e1e;
 $secondary-color: #288aba;
 $third-color: #e9f624;
 $forth-color: #ce8349;
+$plain-color: white;
 
 $font1: courier;
 
@@ -25,7 +26,7 @@ body {
     top: 37%;
     left: 47%;
     transform: translate(-50%, -50%);
-    width: 700px;
+    width: 900px;
 
     h1 {
       color: $third-color;
@@ -53,15 +54,157 @@ body {
 
   .multiLines {
     position: absolute;
-    right: 1%;
+
+    right: 2%;
+    top: 4%;
+    z-index: 1;
     .line {
       width: 31px;
-      height: 1px;
+      height: 2px;
+      margin-bottom: 5px;
       background: white;
+      transition: 0.7s all;
+    }
+    &.cross {
+      .line {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 6px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(3px, -6px);
+        }
+      }
+    }
+  }
+
+  .side-menu {
+    position: absolute;
+    height: 100vh;
+    width: 34%;
+    right: 0%;
+    background: lighten($primary-color, 8%);
+    transition: 0.7s all;
+
+    .menu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .menu-item {
+        font-size: 30px;
+        font-family: $font1;
+        list-style: none;
+        color: $plain-color;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.8s;
+        .menu-link {
+          text-decoration: none;
+          color: $plain-color;
+          &:hover {
+            color: $third-color;
+            font-size: 33px;
+          }
+        }
+      }
+      .active {
+        font-weight: 600;
+        color: $third-color;
+      }
     }
   }
 }
 
+.show {
+  top: 0;
+}
+.hide {
+  top: -100%;
+}
+
+//about me page
+.wrapAbout {
+  width: 800px;
+  height: 660px;
+  margin-bottom: 15px;
+}
+.aboutBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-52%, -33%);
+  width: 800px;
+  height: 400px;
+  .smallBox {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    p {
+      font-family: $font1;
+      color: $plain-color;
+    }
+    .imgContainer {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $third-color;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .textBox {
+    width: 57%;
+    padding-top: 10px;
+    padding: 1%;
+
+    h1 {
+      font-size: 67px;
+      margin-left: 0;
+    }
+  }
+}
+
+.techBox {
+  h3 {
+    padding-left: 0;
+    font-family: $font1;
+    color: $third-color;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .techStack {
+    display: inline-block;
+    margin-left: 20px;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+      transition: 0.7s all;
+      &:hover {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
 .bluee {
   color: $secondary-color;
 }
