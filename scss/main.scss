@@ -8,7 +8,7 @@ $secondary-color: #288aba;
 $third-color: #e9f624;
 $forth-color: #ce8349;
 $plain-color: white;
-
+$fifth-color: rgb(163, 0, 141);
 $font1: courier;
 
 body {
@@ -23,7 +23,7 @@ body {
 
   .centerBox {
     position: absolute;
-    top: 37%;
+    top: 50%;
     left: 47%;
     transform: translate(-50%, -50%);
     width: 900px;
@@ -50,74 +50,166 @@ body {
       color: white;
       padding-left: 82px;
     }
-  }
 
-  .multiLines {
-    position: absolute;
+    .workBox {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-areas:
+        "work1 work2 work3"
+        "work4 work5 work6"
+        "work7 work8 work9";
+      grid-template-columns: repeat(3, 1fr);
+      .wBox {
+        width: 285px;
+        height: 198px;
+        .imgBox {
+          position: relative;
+          width: 100%;
+          height: 85%;
+          border: 1px solid blue;
+          .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($primary-color, 0.9);
+            position: absolute;
+            top: 0;
+            visibility: hidden;
+            span {
+              color: $secondary-color;
+              font-family: $font1;
+              text-align: center;
+              font-size: 13px;
+              margin: 0 auto;
+              display: block;
+              margin-top: 39px;
+              cursor: pointer;
+            }
+            a {
+              text-decoration: none;
+            }
+            button {
+              cursor: pointer;
 
-    right: 2%;
-    top: 4%;
-    z-index: 1;
-    .line {
-      width: 31px;
-      height: 2px;
-      margin-bottom: 5px;
-      background: white;
-      transition: 0.7s all;
-    }
-    &.cross {
-      .line {
-        &:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 6px);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:nth-child(3) {
-          transform: rotate(-45deg) translate(3px, -6px);
-        }
-      }
-    }
-  }
-
-  .side-menu {
-    position: absolute;
-    height: 100vh;
-    width: 34%;
-    right: 0%;
-    background: lighten($primary-color, 8%);
-    transition: 0.7s all;
-
-    .menu {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      .menu-item {
-        font-size: 30px;
-        font-family: $font1;
-        list-style: none;
-        color: $plain-color;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.8s;
-        .menu-link {
-          text-decoration: none;
-          color: $plain-color;
-          &:hover {
-            color: $third-color;
-            font-size: 33px;
+              text-align: center;
+              margin: 0 auto;
+              display: block;
+              margin-top: 13px;
+              background-color: $primary-color;
+              color: $fifth-color;
+              border: none;
+              width: 62px;
+              height: 21px;
+              border-radius: 3px;
+            }
           }
         }
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
-      .active {
-        font-weight: 600;
+      .titleBox {
+        text-align: center;
         color: $third-color;
+        font-family: $font1;
+        padding-top: 10px;
       }
+    }
+    .work1 {
+      grid-area: work1;
+    }
+    .work2 {
+      grid-area: work2;
+    }
+    .work3 {
+      grid-area: work3;
+    }
+    .work4 {
+      grid-area: work4;
+    }
+    .work5 {
+      grid-area: work5;
+    }
+    .work6 {
+      grid-area: work6;
+    }
+    .work7 {
+      grid-area: work7;
+    }
+    .work8 {
+      grid-area: work8;
+    }
+    .work9 {
+      grid-area: work9;
+    }
+  }
+}
+
+.multiLines {
+  position: absolute;
+
+  right: 2%;
+  top: 4%;
+  z-index: 1;
+  .line {
+    width: 31px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: white;
+    transition: 0.7s all;
+  }
+  &.cross {
+    .line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(3px, -6px);
+      }
+    }
+  }
+}
+
+.side-menu {
+  position: absolute;
+  height: 100vh;
+  width: 34%;
+  right: 0%;
+  background: lighten($primary-color, 8%);
+  transition: 0.7s all;
+
+  .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .menu-item {
+      font-size: 30px;
+      font-family: $font1;
+      list-style: none;
+      color: $plain-color;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.8s;
+      .menu-link {
+        text-decoration: none;
+        color: $plain-color;
+        &:hover {
+          color: $third-color;
+          font-size: 33px;
+        }
+      }
+    }
+    .active {
+      font-weight: 600;
+      color: $third-color;
     }
   }
 }

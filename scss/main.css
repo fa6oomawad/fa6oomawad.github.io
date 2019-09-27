@@ -17,7 +17,7 @@ body {
 
 .container .centerBox {
   position: absolute;
-  top: 37%;
+  top: 50%;
   left: 47%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -48,14 +48,139 @@ body {
   padding-left: 82px;
 }
 
-.container .multiLines {
+.container .centerBox .workBox {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+      grid-template-areas: "work1 work2 work3" "work4 work5 work6" "work7 work8 work9";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.container .centerBox .workBox .wBox {
+  width: 285px;
+  height: 198px;
+}
+
+.container .centerBox .workBox .wBox .imgBox {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  border: 1px solid blue;
+}
+
+.container .centerBox .workBox .wBox .imgBox .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.container .centerBox .workBox .wBox .imgBox .overlay span {
+  color: #288aba;
+  font-family: courier;
+  text-align: center;
+  font-size: 13px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 39px;
+  cursor: pointer;
+}
+
+.container .centerBox .workBox .wBox .imgBox .overlay a {
+  text-decoration: none;
+}
+
+.container .centerBox .workBox .wBox .imgBox .overlay button {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 13px;
+  background-color: #1e1e1e;
+  color: #a3008d;
+  border: none;
+  width: 62px;
+  height: 21px;
+  border-radius: 3px;
+}
+
+.container .centerBox .workBox .wBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .centerBox .workBox .titleBox {
+  text-align: center;
+  color: #e9f624;
+  font-family: courier;
+  padding-top: 10px;
+}
+
+.container .centerBox .work1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: work1;
+}
+
+.container .centerBox .work2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: work2;
+}
+
+.container .centerBox .work3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: work3;
+}
+
+.container .centerBox .work4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: work4;
+}
+
+.container .centerBox .work5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: work5;
+}
+
+.container .centerBox .work6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: work6;
+}
+
+.container .centerBox .work7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: work7;
+}
+
+.container .centerBox .work8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: work8;
+}
+
+.container .centerBox .work9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: work9;
+}
+
+.multiLines {
   position: absolute;
   right: 2%;
   top: 4%;
   z-index: 1;
 }
 
-.container .multiLines .line {
+.multiLines .line {
   width: 31px;
   height: 2px;
   margin-bottom: 5px;
@@ -64,21 +189,21 @@ body {
   transition: 0.7s all;
 }
 
-.container .multiLines.cross .line:nth-child(1) {
+.multiLines.cross .line:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(5px, 6px);
           transform: rotate(45deg) translate(5px, 6px);
 }
 
-.container .multiLines.cross .line:nth-child(2) {
+.multiLines.cross .line:nth-child(2) {
   opacity: 0;
 }
 
-.container .multiLines.cross .line:nth-child(3) {
+.multiLines.cross .line:nth-child(3) {
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
 }
 
-.container .side-menu {
+.side-menu {
   position: absolute;
   height: 100vh;
   width: 34%;
@@ -88,7 +213,7 @@ body {
   transition: 0.7s all;
 }
 
-.container .side-menu .menu {
+.side-menu .menu {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,7 +221,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.container .side-menu .menu .menu-item {
+.side-menu .menu .menu-item {
   font-size: 30px;
   font-family: courier;
   list-style: none;
@@ -110,17 +235,17 @@ body {
   transition: all 0.8s;
 }
 
-.container .side-menu .menu .menu-item .menu-link {
+.side-menu .menu .menu-item .menu-link {
   text-decoration: none;
   color: white;
 }
 
-.container .side-menu .menu .menu-item .menu-link:hover {
+.side-menu .menu .menu-item .menu-link:hover {
   color: #e9f624;
   font-size: 33px;
 }
 
-.container .side-menu .menu .active {
+.side-menu .menu .active {
   font-weight: 600;
   color: #e9f624;
 }
