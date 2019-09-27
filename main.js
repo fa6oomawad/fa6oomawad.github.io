@@ -22,3 +22,20 @@ function toggleMenu() {
     menuToggle = 0;
   }
 }
+
+//functions to show overlay
+
+const workBox = document.querySelectorAll(".wBox");
+
+function showOverlay() {
+  let overlay = this.querySelector(".overlay");
+  overlay.style.visibility = "visible";
+}
+function hideOverlay() {
+  let overlay = this.querySelector(".overlay");
+  overlay.style.visibility = "hidden";
+}
+workBox.forEach(box => {
+  box.addEventListener("mouseover", showOverlay);
+  box.addEventListener("mouseout", hideOverlay);
+});
