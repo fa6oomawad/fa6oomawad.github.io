@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fatima's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../scss/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="multiLines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="side-menu hide">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="about.html">About </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="work.html">work</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link active" href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="centerBox moretop moreheight">
+        <form class="formBox" action="">
+          <span class="formSpan bluee">Name:</span>
+          <input
+            type="text"
+            name="senderName"
+            placeholder="Your name.."
+            class="formInput"
+          />
+          <span class="formSpan orange">Message:</span>
+          <textarea
+            name="senderMessage"
+            placeholder="Your message.."
+            class="formInput"
+            id="formMessage"
+          ></textarea>
+          <input type="submit" value="Submit" class="subbtn" />
+        </form>
+        <div class="iconsBox">
+          <i class="fab fa-github fa-2x"></i>
+          <i class="fab fa-linkedin fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-google fa-2x"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
