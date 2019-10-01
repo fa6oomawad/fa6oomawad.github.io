@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container {
   background-color: $primary-color;
   width: 100%;
@@ -23,7 +24,7 @@ body {
 
   .centerBox {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 47%;
     transform: translate(-50%, -50%);
     width: 900px;
@@ -74,6 +75,7 @@ body {
             position: absolute;
             top: 0;
             visibility: hidden;
+
             span {
               color: $secondary-color;
               font-family: $font1;
@@ -144,10 +146,16 @@ body {
     }
   }
 }
+.moretop {
+  top: 50% !important;
+}
+.moreheight {
+  height: 618px !important;
+}
 
 .multiLines {
   position: absolute;
-
+  cursor: pointer;
   right: 2%;
   top: 4%;
   z-index: 1;
@@ -297,6 +305,65 @@ body {
     }
   }
 }
+
+.formBox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lighten($primary-color, 10%);
+  padding: 10px;
+  height: 264px;
+  padding-top: 21px;
+
+  .formSpan {
+    display: block;
+    font-family: $font1;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .formInput {
+    width: 99%;
+    height: 34px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 3px;
+    font-family: $font1;
+  }
+}
+#formMessage {
+  height: 90px;
+  padding: 5px;
+  width: 97%;
+}
+.subbtn {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  font-family: $font1;
+  display: block;
+  background-color: $primary-color;
+  color: $third-color;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.iconsBox {
+  position: absolute;
+  top: 84%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  i {
+    color: white;
+    margin-right: 49px;
+  }
+}
+
 .bluee {
   color: $secondary-color;
 }

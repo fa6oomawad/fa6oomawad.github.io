@@ -17,7 +17,7 @@ body {
 
 .container .centerBox {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 47%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -173,8 +173,17 @@ body {
   grid-area: work9;
 }
 
+.moretop {
+  top: 50% !important;
+}
+
+.moreheight {
+  height: 618px !important;
+}
+
 .multiLines {
   position: absolute;
+  cursor: pointer;
   right: 2%;
   top: 4%;
   z-index: 1;
@@ -339,6 +348,70 @@ body {
 .techBox .techStack img:hover {
   width: 60px;
   height: 60px;
+}
+
+.formBox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #383838;
+  padding: 10px;
+  height: 264px;
+  padding-top: 21px;
+}
+
+.formBox .formSpan {
+  display: block;
+  font-family: courier;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.formBox .formInput {
+  width: 99%;
+  height: 34px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: none;
+  padding-left: 3px;
+  font-family: courier;
+}
+
+#formMessage {
+  height: 90px;
+  padding: 5px;
+  width: 97%;
+}
+
+.subbtn {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  font-family: courier;
+  display: block;
+  background-color: #1e1e1e;
+  color: #e9f624;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.iconsBox {
+  position: absolute;
+  top: 84%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.iconsBox i {
+  color: white;
+  margin-right: 49px;
 }
 
 .bluee {
