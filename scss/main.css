@@ -265,7 +265,7 @@ body {
 }
 
 .hide {
-  top: -100%;
+  top: -200%;
 }
 
 .wrapAbout {
@@ -582,7 +582,7 @@ body {
 
 @media screen and (max-width: 809px) {
   .hide {
-    top: -105%;
+    top: -200%;
   }
   .side-menu {
     width: 50%;
@@ -645,7 +645,7 @@ body {
     font-size: 25px;
   }
   .container .centerBox .wrapAbout {
-    height: 702px;
+    height: 850px;
     width: 400px;
   }
   .container .centerBox .wrapAbout .aboutBox {
@@ -680,14 +680,14 @@ body {
     margin: auto;
   }
   .container .centerBox .techBox h3 {
-    padding-left: 25px;
+    padding-left: 0;
   }
   .container .centerBox .techBox .techStack img {
     width: 42px;
     height: 46px;
   }
   .moretop2 {
-    top: 168% !important;
+    top: 149% !important;
   }
   .imgMob {
     width: 200px !important;
@@ -706,7 +706,7 @@ body {
     width: 340px;
   }
   .iconsBox i {
-    margin-right: 12px;
+    margin-right: 4px;
   }
 }
 /*# sourceMappingURL=main.css.map */
