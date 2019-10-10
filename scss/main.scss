@@ -228,7 +228,7 @@ body {
   top: 0;
 }
 .hide {
-  top: -100%;
+  top: -200%;
 }
 
 //about me page
@@ -469,7 +469,7 @@ body {
 
 @include mediaMedium {
   .hide {
-    top: -105%;
+    top: -200%;
   }
   .side-menu {
     width: 50%;
@@ -482,7 +482,6 @@ body {
       .wrapAbout {
         width: 600px;
         height: 549px;
-
       }
       .workBox {
         display: grid;
@@ -492,8 +491,7 @@ body {
           "work3 work4"
           "work5 work6"
           "work7 work8"
-          "work9 work9"
-        ;
+          "work9 work9";
 
         grid-template-columns: 1fr 1fr;
         .wBox {
@@ -502,9 +500,8 @@ body {
       }
     }
   }
-  .moretop2{
+  .moretop2 {
     top: 97% !important;
-
   }
   .aboutBox {
     width: 624px;
@@ -527,19 +524,18 @@ body {
       }
     }
   }
-  .techBox{
-    .techStack{
-      img{
+  .techBox {
+    .techStack {
+      img {
         width: 41px;
-    height: 41px;
+        height: 41px;
       }
     }
   }
 
-  .iconsBox{
-    i{
+  .iconsBox {
+    i {
       margin-right: 34px;
-
     }
   }
 }
@@ -552,15 +548,15 @@ body {
       h2 {
         font-size: 25px;
       }
-      .wrapAbout{
-        height: 702px;
+      .wrapAbout {
+        height: 850px;
         width: 400px;
 
         .aboutBox {
           width: 85vw;
           left: 52%;
           top: 44%;
-      
+
           .smallBox {
             display: block;
             .imgContainer {
@@ -569,7 +565,7 @@ body {
               left: 88%;
             }
           }
-      
+
           .textBox {
             width: 100%;
             h1 {
@@ -600,7 +596,7 @@ body {
       }
       .techBox {
         h3 {
-          padding-left: 25px;
+          padding-left: 0;
         }
         .techStack {
           img {
@@ -613,14 +609,13 @@ body {
   }
 
   .moretop2 {
-    top: 168% !important;
+    top: 149% !important;
   }
   .imgMob {
     width: 200px !important;
     height: 200px !important;
   }
-  
-  
+
   .text0 {
     display: block;
   }
@@ -636,7 +631,7 @@ body {
   }
   .iconsBox {
     i {
-      margin-right: 12px;
+      margin-right: 4px;
     }
   }
 }
