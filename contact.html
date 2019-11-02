@@ -42,7 +42,7 @@
         </ul>
       </div>
       <div class="centerBox moretop moreheight">
-        <form class="formBox" action="">
+        <form class="formBox" method="POST" action="toEmail.php">
           <span class="formSpan bluee">Name:</span>
           <input
             type="text"
@@ -50,7 +50,15 @@
             placeholder="Your name.."
             class="formInput"
           />
-          <span class="formSpan orange">Message:</span>
+          <span class="formSpan orange">Email:</span>
+          <input
+            type="email"
+            name="senderEmail"
+            placeholder="Your Email.."
+            class="formInput"
+          />
+
+          <span class="formSpan bluee">Message:</span>
           <textarea
             name="senderMessage"
             placeholder="Your message.."
@@ -60,10 +68,20 @@
           <input type="submit" value="Submit" class="subbtn" />
         </form>
         <div class="iconsBox">
-         <a href="https://github.com/fa6oomawad"><i class="fab fa-github fa-2x"></i></a> 
-         <a href="https://www.linkedin.com/in/fatima-mukhtar-466127158/"> <i class="fab fa-linkedin fa-2x"></i></a>
-          <a href="https://instagram.com/timaa_muk"> <i class="fab fa-instagram fa-2x"></i></a>
-         <a href="mailto:fatimamuk0@gmail.com?Subject=Hello%20again" target="_top"><i class="fab fa-google fa-2x"></i></a>
+          <a href="https://github.com/fa6oomawad"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/fatima-mukhtar-466127158/">
+            <i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://instagram.com/timaa_muk">
+            <i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a
+            href="mailto:fatimamuk0@gmail.com?Subject=Hello%20again"
+            target="_top"
+            ><i class="fab fa-google fa-2x"></i
+          ></a>
         </div>
       </div>
     </div>
